@@ -16,7 +16,7 @@ const routes: Routes = [
   // {path:'playback',component:VideoPlayerComponent},
   {path:'login',component:LoginInterfaceComponent},
   {path:'register',component:RegisterInterfaceComponent},
-  {path:'video-request',component:VideoRequestComponent,canActivate: [AuthGuard]},
+  {path:'video-request',component:VideoRequestComponent},
   // {path:'add-thumbnail',component:ThumbnailVideoComponent},
   // {path:'get-video-request',component:GetVideoRequestComponent},
   // {path:'get-thumbnail-data',component:GetThumbnailInfoComponent},

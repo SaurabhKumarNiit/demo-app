@@ -112,7 +112,6 @@
     text-decoration: none;
     color:  white;
     padding: 5px 0;
-    transition: 0.2s ease;
     width: 140px;
     font-weight: bold;
     font-size: 15px;
@@ -158,7 +157,6 @@
       padding-top: 50px;
       background: #175d69;
       flex-direction: column;
-      transition: 0.9s ease;
     }
   
     .navbar #menu-toggle:checked ~ .links {
@@ -194,7 +192,7 @@
     width: 100%;
     position: absolute;
     top: -100%;
-    animation: anim4 1s forwards 1.5s;
+    animation: anim4 0.8s forwards 0.5s;
   }
   
   #logo {
@@ -253,12 +251,6 @@
       font-size: 3em; 
       top: 20%;
     }
-    /* .imgtab {
-      margin-top: 10px;
-      height: 50px;
-      width: 50px;
-      display: block;
-    } */
     .navbar .logo a{
       left: 25%;
     }
