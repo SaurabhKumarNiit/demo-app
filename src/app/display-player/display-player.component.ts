@@ -1,67 +1,43 @@
 // display-player.component.ts
 
 import { Component, Input } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { trigger, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-display-player',
   templateUrl: './display-player.component.html',
   styleUrls: ['./display-player.component.css'],
+  animations: [
+    trigger('fadeIn', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('1000ms', style({ opacity: 1 })),
+      ]),
+    ]),
+  ],
 })
 export class DisplayPlayerComponent {
   // @Input() videos: string[] = [];
 
   videos: string[] = [
-    'video-1.mp4', // Replace with your actual video file names
+    'video-00.mp4', 
+    'video-1.mp4', 
     'video-2.mp4',
     'video-3.mp4',
-    // Add more video file names as needed
+    'video-4.mp4',
+    'video-5.mp4',
+    'video-6.mp4',
+    'video-7.mp4',
+    'video-8.mp4',
+    'video-9.mp4',
+    // 'video-10.mp4',
+    'video-11.mp4',
+    'video-12.mp4',
+    'video-13.mp4',
+    'video-14.mp4',
+    'video-15.mp4',
+    'video-16.mp4',
   ];
 
-  currentVideoIndex = 0;
-  currentVideoUrl: SafeResourceUrl = '';
-  isLooping = false;
 
-  carouselConfig = {
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    arrows: true,
-    dots: true,
-    centerMode: true,
-    centerPadding: '0',
-  };
-
-  constructor(private sanitizer: DomSanitizer) {
-    this.currentVideoUrl = this.getVideoUrl(this.videos[this.currentVideoIndex]);
-  }
-
-  getVideoUrl(videoFileName: string): SafeResourceUrl {
-    const videoPath = `assets/videos/${videoFileName}`;
-    return this.sanitizer.bypassSecurityTrustResourceUrl(videoPath);
-  }
-
-  playVideo(video: string): void {
-    this.currentVideoIndex = this.videos.indexOf(video);
-    this.currentVideoUrl = this.getVideoUrl(video);
-  }
-
-  playNextVideo(): void {
-    this.currentVideoIndex = (this.currentVideoIndex + 1) % this.videos.length;
-    this.currentVideoUrl = this.getVideoUrl(this.videos[this.currentVideoIndex]);
-  }
-
-  playPauseVideo(): void {
-    // Your play/pause logic here
-  }
-
-  toggleLoop(): void {
-    // Your toggle loop logic here
-  }
-
-   getVideoThumbnail(videoFileName: string): SafeResourceUrl {
-    // Your logic to get video thumbnail URL
-    // You can use the same logic as getVideoUrl or a separate one
-    return this.sanitizer.bypassSecurityTrustResourceUrl('thumbnail_url_here');
-  }
 }

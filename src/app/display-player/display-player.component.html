@@ -1,16 +1,12 @@
-<!-- display-player.component.html -->
-
-<div class="carousel-container">
-  <ngx-slick-carousel class="carousel" [config]="carouselConfig">
-    <div *ngFor="let video of videos" class="carousel-item" (click)="playVideo(video)">
-      <img [src]="getVideoThumbnail(video)" alt="Video Thumbnail">
+<app-navbar></app-navbar>
+<div class="container" [@fadeIn]>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let info of videos;">
+      <div class="card mb-4 shadow-sm">
+        <video controls class="card-img-top video-zoom video-responsive" src="assets/videos/{{info}}" type="video/mp4"></video>
+      
+      </div>
     </div>
-  </ngx-slick-carousel>
+  </div>
 </div>
-<div class="video-player-container">
-  <video [src]="currentVideoUrl" [autoplay]="isLooping" (ended)="playNextVideo()" controls></video>
-</div>
-<div class="controls">
-  <button (click)="playPauseVideo()">Play/Pause</button>
-  <button (click)="toggleLoop()">Toggle Loop</button>
-</div>
+<app-footer></app-footer>

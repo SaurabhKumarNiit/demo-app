@@ -1,44 +1,29 @@
-/* display-player.component.css */
 
-.carousel-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+.container{
+  margin-top: 80px;
 }
 
-.carousel {
-  width: 100%;
+.video-zoom {
+  transition: transform 0.3s ease-in-out;
 }
 
-.carousel-item {
-  cursor: pointer;
+.video-zoom:hover {
+  transform: scale(1.1);
 }
 
-.carousel-item img {
+.video-responsive {
   width: 100%;
   height: auto;
-  border-radius: 8px;
 }
 
-.video-player-container {
-  margin-top: 20px;
-}
-
-.controls {
-  margin-top: 10px;
-}
-
-button {
-  margin-right: 10px;
-  padding: 8px 16px;
-  font-size: 14px;
-  cursor: pointer;
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-}
-
-button:hover {
-  background-color: #2980b9;
+@media (max-width: 576px) {
+  .card{
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  .video-responsive {
+   
+    height: auto;
+  }
 }

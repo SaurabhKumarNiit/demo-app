@@ -16,7 +16,7 @@ import { VideoGalleryComponent } from './video-gallery/video-gallery.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'home',component:HomeComponent},
-  {path:'test-video',component:DisplayPlayerComponent},
+  {path:'gallery',component:DisplayPlayerComponent},
   {path:'test',component:TestAppComponent},
   // {path:'playback',component:VideoPlayerComponent},
   {path:'login',component:LoginInterfaceComponent},
