@@ -1,13 +1,11 @@
 
-section{
+.main{
   /* text-align: center; */
   margin-top: 30px;
-  /* height: 800px; */
 }
 h1{
 text-align: center;
 font-weight: bolder;
-  /* text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(138, 237, 84); */
 }
 .accordion{
  margin-top: 30px;
@@ -68,10 +66,13 @@ form .fields .input-field{
   width: 100%;
 
 }
-section{
+.main{
   margin-top: 10%;
 
  
+}
+.foot{
+  margin-top: 150px;
 }
 .accordion{
   margin-top: 30px;
