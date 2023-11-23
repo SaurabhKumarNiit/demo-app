@@ -4,6 +4,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -31,6 +32,10 @@ import {
   GoogleLoginProvider
 } from '@abacritt/angularx-social-login';
 import {  GoogleSigninButtonModule } from '@abacritt/angularx-social-login';
+import { TestAppComponent } from './test-app/test-app.component';
+import { DisplayPlayerComponent } from './display-player/display-player.component';
+import { VideoGalleryComponent } from './video-gallery/video-gallery.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -46,7 +51,10 @@ import {  GoogleSigninButtonModule } from '@abacritt/angularx-social-login';
     ContactComponent,
     AboutComponent,
     FaqComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    TestAppComponent,
+    DisplayPlayerComponent,
+    VideoGalleryComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +65,9 @@ import {  GoogleSigninButtonModule } from '@abacritt/angularx-social-login';
     GoogleSigninButtonModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatExpansionModule,
+    SlickCarouselModule,
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },

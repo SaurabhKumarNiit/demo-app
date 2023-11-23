@@ -6,7 +6,7 @@ box-sizing: border-box;
 font-family: 'Roboto',sans-serif;
 }
 section{
-  margin-top: 5%;
+ 
     min-height: 100vh;
     display: flex;
     align-items:center;
@@ -152,7 +152,7 @@ form .fields .input-field{
   width: 100%;
 }
 section{
-  margin-top: 30%;
+  margin-top: 10%;
  
 }
 .container header::before{

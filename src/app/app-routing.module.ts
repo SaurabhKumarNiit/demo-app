@@ -9,10 +9,15 @@ import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { AuthGuard } from './guard/auth.guard';
+import { TestAppComponent } from './test-app/test-app.component';
+import { DisplayPlayerComponent } from './display-player/display-player.component';
+import { VideoGalleryComponent } from './video-gallery/video-gallery.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'home',component:HomeComponent},
+  {path:'test-video',component:DisplayPlayerComponent},
+  {path:'test',component:TestAppComponent},
   // {path:'playback',component:VideoPlayerComponent},
   {path:'login',component:LoginInterfaceComponent},
   {path:'register',component:RegisterInterfaceComponent},

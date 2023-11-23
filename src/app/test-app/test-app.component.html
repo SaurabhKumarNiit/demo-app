@@ -1,0 +1,10 @@
+<!-- navbar.component.html -->
+
+<div class="navbar" [class.active]="navbarState">
+  <button (click)="toggleNavbar()" class="toggle-button">&#9776;</button>
+  <div class="navbar-content">
+    <a routerLink="/" (click)="closeNavbar()">Home</a>
+    <a routerLink="/about" (click)="closeNavbar()">About</a>
+    <a routerLink="/contact" (click)="closeNavbar()">Contact</a>
+  </div>
+</div>
