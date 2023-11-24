@@ -20,7 +20,6 @@ export class DisplayPlayerComponent {
   // @Input() videos: string[] = [];
 
   videos: string[] = [
-    'video-00.mp4', 
     'video-1.mp4', 
     'video-2.mp4',
     'video-3.mp4',
@@ -31,6 +30,7 @@ export class DisplayPlayerComponent {
     'video-8.mp4',
     'video-9.mp4',
     // 'video-10.mp4',
+    'video-00.mp4', 
     'video-11.mp4',
     'video-12.mp4',
     'video-13.mp4',
