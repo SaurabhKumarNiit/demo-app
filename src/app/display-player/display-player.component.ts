@@ -17,7 +17,6 @@ import { trigger, style, animate, transition } from '@angular/animations';
   ],
 })
 export class DisplayPlayerComponent {
-  // @Input() videos: string[] = [];
 
   videos: string[] = [
     'video-1.mp4', 
@@ -27,16 +26,7 @@ export class DisplayPlayerComponent {
     'video-5.mp4',
     'video-6.mp4',
     'video-7.mp4',
-    'video-8.mp4',
-    'video-9.mp4',
-    // 'video-10.mp4',
-    'video-00.mp4', 
-    'video-11.mp4',
-    'video-12.mp4',
-    'video-13.mp4',
-    'video-14.mp4',
-    'video-15.mp4',
-    'video-16.mp4',
+    'video-8.mp4'
   ];
 
 
