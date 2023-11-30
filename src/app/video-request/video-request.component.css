@@ -70,6 +70,14 @@ body::before{
 
 }
 
+.merged-input {
+  padding-left: 25px;
+}
+.merged-input select{
+  padding-right: 40px;
+margin-left: -23px;
+}
+
 }
 
 .container form .details{
@@ -163,5 +171,25 @@ width: 0px;
 .container form{
   position: inherit;
 }
-
+#budget {
+  flex: 1;
+  width: 50%;
 }
+.bugetData{
+  width: 100%;
+}
+}
+
+
+.merged-input {
+  display: flex;
+  height: 43px;
+}
+
+.bugetData label{
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff ;
+}
+
+
